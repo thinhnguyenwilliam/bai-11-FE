@@ -69,3 +69,22 @@ body{
 }
 /* End container */
 
+
+
+/* Box head*/
+.box_head{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.box_head .inner_sub_title{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+.box_head .inner_title{
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--color-main);
+}
+/* End box head */
