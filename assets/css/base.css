@@ -10,7 +10,7 @@
     --color-text:#777777;
     --bg-1:#EFEFEF;
     --bg-2:#DCE8EB;
-    --bg-3:#1B2026;
+    --bg-3:#31363B;
     
 
     --font:'DM Sans', sans-serif;
@@ -30,6 +30,48 @@ a{
 body{
     font-family: var(--font);
 }
+
+
+/* Button */
+.button{
+    background-color: #ddd;
+    color: var(--color-main);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 18px 36px;
+
+    transition: all 0.5s;/*chuyển màu mất 0.5s*/
+
+    border: 2px solid #ddd;
+
+    text-align: center;
+}
+.button_main{
+    background-color: var(--color-main);
+    border-color: var(--color-main);
+    color: #fff;
+}
+.button_highlight{
+    background-color: var(--color-highlight);
+    border-color: var(--color-highlight);
+}
+.button_highlight:hover{
+    background-color: #fff;
+    border-color: #fff;
+}
+.button_outline_highlight{
+    background-color: transparent;/*màu nền trong suốt*/
+    border-color: #9f9c9c;
+    color: #fff;
+}
+.button_outline_highlight:hover{
+    background-color: var(--color-highlight);
+    border-color: var(--color-highlight);
+    color:var(--color-main);
+}
+/* End Button */
 
 
 /* class container */
@@ -87,4 +129,24 @@ body{
     font-weight: 700;
     color: var(--color-main);
 }
+.box_head.inner_left{
+    text-align: left;
+}
+.box_head.inner_white .inner_title{
+    color: #fff;
+}
+@media (max-width: 767.98px){
+    .box_head.inner_left{
+        text-align: center;
+    }
+}
+@media (max-width: 575.98px){
+    .box_head .inner_title{
+        font-size: 32px;
+    }
+    .box_head .inner_sub_title{
+        font-size: 16px;
+    }
+}
+
 /* End box head */

@@ -70,6 +70,24 @@
     font-size: 24px;
     color: var(--color-main);
 }
+.header .inner_icon_menu{
+    display: none;
+}
+@media (max-width:991.98px){
+    .header .inner_wrap{
+        padding: 15px;
+    }
+    .header .inner_menu{
+        display: none;
+    }
+    .header .inner_social{
+        display: none;
+    }
+    .header .inner_icon_menu{
+        display: inline-block;
+        font-size: 24px;
+    }
+}
 /* End box header */
 
 
@@ -117,43 +135,28 @@
     color: #a39f9f;
     margin-bottom: 30px;
 }
+@media (max-width:991.98px){
+    .section_1 .inner_wrap{
+        max-width: 100%;
+    }
+}
+@media (max-width:767.98px){
+    .section_1 .inner_wrap{
+        text-align: center;
+    }
+}
+@media (max-width:575.98px){
+    .section_1 .inner_subtitle{
+        font-size: 16px;
+    }
+    .section_1 .inner_title{
+        font-size: 32px;
+    }
+    .section_1 .inner_button a{
+        margin: 5px 0;
+    }
+}
 /* End Section 1 */
-
-
-/* Button */
-.button{
-    background-color: #ddd;
-    color: var(--color-main);
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 700;
-    display: inline-block;
-    padding: 18px 36px;
-
-    transition: all 0.5s;/*chuyển màu mất 0.5s*/
-
-    border: 2px solid #ddd;
-}
-.button_highlight{
-    background-color: var(--color-highlight);
-    border-color: var(--color-highlight);
-}
-.button_highlight:hover{
-    background-color: #fff;
-    border-color: #fff;
-}
-.button_outline_highlight{
-    background-color: transparent;/*màu nền trong suốt*/
-    border-color: #9f9c9c;
-    color: #fff;
-}
-.button_outline_highlight:hover{
-    background-color: var(--color-highlight);
-    border-color: var(--color-highlight);
-    color:var(--color-main);
-}
-/* End Button */
-
 
 
 /* Section 2 */
@@ -200,6 +203,7 @@
     padding: 40px 50px;
     border-radius: 8px;
     text-align: center;
+    margin-bottom: 10px;
 }
 .section_2 .inner_content .inner_list .inner_item i{
     font-size: 32px;
@@ -214,6 +218,35 @@
     font-size: 18px;
     color: var(--color-text);
     margin-bottom: 30px;
+}
+@media (max-width:991.98px){
+    .section_2 .inner_wrap{
+        flex-wrap: wrap;
+    }
+    .section_2 .inner_image{
+        width: 100%;
+        margin-right: 0;
+    }
+    .section_2 .inner_content{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+@media (max-width:767.98px){
+    .section_2 .inner_content{
+        text-align: center;
+    }
+    .section_2 .inner_content .inner_list{
+        justify-content: center;
+    }
+}
+@media (max-width:575.98px){
+    .section_2 .inner_content .inner_sub_title{
+        font-size: 16px;
+    }
+    .section_2 .inner_content .inner_title{
+        font-size: 32px;
+    }
 }
 /* End Section 2 */
 
@@ -243,7 +276,6 @@
     font-size: 60px;
     font-weight: 700;
     color: var(--color-main);
-    margin-bottom: 30px;
 }
 .section_3 .inner_image{
     width: 28%;
@@ -255,6 +287,53 @@
     border-radius: 8px 8px 0 0;
     margin-top: -60px; /*ảnh lồi lên trên 1 đoạn*/
     margin-bottom: -5px;  
+}
+@media (max-width: 1199.98px){
+    .section_3 .inner_content{
+        width: 62%;
+        padding: 2% 4%;
+        margin-right: 3%;
+    }
+}
+@media (max-width: 991.98px){
+    .section_3 .inner_wrap{
+        flex-wrap: wrap;
+    }
+    .section_3 .inner_content{
+        width: 100%;
+        padding: 2% 4%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .section_3 .inner_content .inner_title{
+        font-size: 48px;
+    }
+    .section_3 .inner_image{
+        width: 40%;
+
+        margin-right: auto;/*2 dòng này đi chung canh giữa hình bên trong*/
+        margin-left: auto;
+    }
+    .section_3 .inner_image img{
+        margin-top: 0px;
+    }
+}
+@media (max-width: 767.98px){
+    .section_3 .inner_content{
+        text-align: center;
+        padding: 30px 0;
+    }
+    .section_3 .inner_image{
+        width: 90%;
+    }
+}
+@media (max-width: 575.98px){
+    .section_3 .inner_content .inner_title{
+        font-size: 32px;
+    }
+    .section_3 .inner_content .inner_sub_title{
+        font-size: 16px;
+    }
 }
 /* End Section 3 */
 
@@ -318,4 +397,195 @@
     background-color: var(--color-highlight);
     color: #fff;
 }
+@media (max-width: 991.98px){
+    .section_7 .inner_wrap{
+        flex-wrap: wrap;
+    }
+    .section_7 .inner_box{
+        width: calc(50% - 30px/2);
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 575.98px){
+    .section_7 .inner_box{
+        width: 100%;
+    }
+}
 /* End Section 7 */
+
+
+
+
+/* Section 8 */
+.section_8{
+    background-color: var(--bg-1);
+    padding-bottom: 60px;
+}
+.section_8 .inner_image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    
+    border-radius: 12px;/*2 cái này đi chung, bo tròn dư ra cần hidden mới thấy*/
+    overflow: hidden;
+}
+.section_8 .inner_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section_8 .inner_wrap{
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 90%;
+    margin: -50px auto 0 auto;
+
+    position: relative;/*nếu không để relative thì box này nó nằm dưới so với box inner_image trên*/
+    display: flex;
+    align-items: center;
+}
+.section_8 .inner_wrap .inner_list{
+    width: 85%;
+
+    display: flex;
+}
+.section_8 .inner_wrap .inner_list .inner_item{
+    width: 25%;
+}
+.section_8 .inner_wrap .inner_list .inner_item .inner_label{
+    color: var(--color-text);
+    margin-bottom: 5px;
+}
+.section_8 .inner_wrap .inner_list .inner_item .inner_title{
+    color: var(--color-main);
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.section_8 .inner_wrap .inner_button{
+    width: 15%;
+}
+.section_8 .inner_wrap .inner_button .button{
+    width: 100%;
+}
+@media (max-width: 991.98px){
+    .section_8 .inner_wrap{
+        flex-wrap: wrap;
+    }
+    .section_8 .inner_wrap .inner_list{
+        width: 100%;/*100% content của box cha*/
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .section_8 .inner_wrap .inner_list .inner_item{
+        width: 50%;
+    }
+    .section_8 .inner_wrap .inner_button{
+        width: 30%;
+    }
+}
+@media (max-width: 575.98px){
+    .section_8 .inner_wrap{
+        text-align: center;
+    }
+    .section_8 .inner_wrap .inner_list .inner_item{
+        width: 100%;
+    }
+    .section_8 .inner_wrap .inner_button{
+        margin: 0 auto;/*canh giữa button*/
+        width: 160px;
+    }
+}
+/* End Section 8 */
+
+
+
+
+/* Section 9 */
+.section_9{
+    background-color: var(--bg-3);
+    padding: 60px 0;
+}
+.section_9 .inner_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.section_9 .inner_wrap .inner_box{
+    background-color: #fff;
+    border-radius: 12px;
+    width: calc(100%/3 - 60px/3);
+    padding: 40px;
+}
+.section_9 .inner_box .inner_desc{
+    font-size: 28px;
+    color: var(--color-text);
+    font-style: italic;
+
+    line-height: 1.5;/*khoảng cách giữa các dòng*/
+}
+.section_9 .inner_box .inner_icon{
+    font-size: 60px;
+    color: var(--color-text);
+    text-align: right;
+    margin-top: -30px;
+}
+.section_9 .inner_box .inner_info{
+    display: flex;
+    align-items: center;
+}
+.section_9 .inner_avatar{
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;/*2 dòng này đi chung*/
+    overflow: hidden;
+
+    margin-right: 15px;
+}
+.section_9 .inner_avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section_9 .inner_box .inner_text{
+    flex: 1;/*chiếm phần còn lại vì: inner_info có 2 phần: inner_avatar và inner_text, để lúc co giãn đở lỗi giao diện*/
+}
+.section_9 .inner_box .inner_text .inner_name{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-main);
+    margin-bottom: 5px;
+}
+.section_9 .inner_box .inner_text .inner_position{
+    color: #000;
+
+}
+@media (max-width: 991.98px){
+    .section_9 .inner_wrap{
+        flex-wrap: wrap;
+    }
+    .section_9 .inner_wrap .inner_box{
+        width: calc(100%/2 - 30px/2);
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 575.98px){
+    .section_9 .inner_wrap .inner_box{
+        width: 100%;
+    }
+    .section_9 .inner_box .inner_desc{
+        font-size: 18px;
+    }
+    .section_9 .inner_box .inner_icon{
+        font-size: 40px;
+    }
+
+    .section_9 .inner_box .inner_text .inner_name{
+        font-size: 20px;
+    }
+    .section_9 .inner_avatar{
+        width: 60px;
+        height: 60px;
+    }
+}
+/* End Section 9 */
